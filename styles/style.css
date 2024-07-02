@@ -1,0 +1,254 @@
+/* Work sans font */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Shared Styles Starts*/
+
+*{
+    font-family: "Work Sans", sans-serif;
+    margin: 0px;
+}
+
+.btn{
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #FF900E;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+section{
+    margin-bottom: 30px;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+
+/* nav styles  starts */
+
+header{
+    width: 100%;
+    background-color: rgba(255, 144, 14, 0.10);
+    padding: 20px 0px;
+    margin-bottom: 30px;
+}
+
+.nav{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.nav-title{
+    font-size: 45px;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+li > a{
+    text-decoration: none;
+    color: var(--Dark-02, #424242);
+    font-weight: 500;
+}
+
+/* Nav style ends */
+
+/* Banner Styles Starts */
+.banner-content{
+    width: 80%;
+    margin: auto;
+}
+.banner{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+.banner-title{
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+.banner-slogan{
+    font-size: 16px;
+    color: var(--Dark-03, #727272);
+    margin-bottom: 16px;
+}
+
+.banner-img{
+    width: 100%;
+}
+
+/* main styles starts */
+main{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+    /* team style starts */
+.team{
+    display: flex;
+    align-items: center;
+    gap:5%;
+}
+.team-images{
+    display: grid;
+    gap:10px;
+    grid-template-columns: repeat( 2 , 1fr );
+}
+
+.team > div{
+    flex: 1;
+}
+
+.team-img{
+    width: 100%;
+}
+
+h3{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.quick-list{
+    color: var(--Dark-03, #727272);
+}
+.features{
+    color:#FF900E;
+}
+
+
+
+    /* team style ends */
+
+    /* Facts Style starts */
+
+
+.facts-heading{
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+.facts-card-container{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 5%;
+}
+.facts-card-container > div{
+    flex: 1;
+}
+
+.card{
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 20px 10px;
+}
+
+.card > img{
+    width: fit-content;
+}
+    /* Facts styles ends */
+    /* Sponsors Styles Starts */
+.sponsors-heading{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.sponsors-card-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap:30px;
+}
+.sponsors-card-container > img {
+    /* flex:1; */
+    width: 16%;
+}
+/* Responsiveness */
+
+@media screen and (max-width: 576px) {
+    .nav{
+        flex-direction: column;
+        gap:30px;
+        width: 90%;
+    }
+    .nav ul{
+        flex-direction: row;
+        gap:20px;
+        padding-inline-start: 0px;
+    }
+    .banner-content{    
+        width: 90%;
+    }
+    .banner,.sponsors-heading{
+        width: 100%;
+    }
+    main{
+        width: 90%;
+    }
+    .team{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .team-images{
+        grid-template-columns: 1fr;
+    }
+
+    .facts-heading{
+        width: 100%;
+    }
+    .facts-card-container{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .card{
+        width: 50%;
+        margin: auto;
+    }
+}
+@media screen and (min-width:577px) and (max-width: 980px) {
+    .nav{
+        flex-direction: column;
+        gap:30px;
+        width: 90%;
+    }
+    .nav ul{
+        gap:20px;
+        padding-inline-start: 0px;
+    }
+    .banner-content{    
+        width: 90%;
+    }
+    .banner,.sponsors-heading{
+        width: 100%;
+    }
+    main{
+        width: 90%;
+    }
+    .team{
+        flex-direction: column;
+        gap:30px;
+    }
+    .facts-heading{
+        width: 80%;
+    }
+
+    .facts-card-container{
+        display: grid;
+
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
